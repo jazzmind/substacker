@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import React from "react";
 import "./globals.css";
-import { SessionProvider } from "@jazzmind/busibox-app/components/auth/SessionProvider";
-import { ThemeProvider, CustomizationProvider } from "@jazzmind/busibox-app";
-import { FetchWrapper } from "@jazzmind/busibox-app";
-import { VersionBar } from "@jazzmind/busibox-app";
+import Providers from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,22 +42,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <FetchWrapper skipAuthUrls={['/api/auth/session', '/api/logout', '/api/health']} />
-        <ThemeProvider>
-          <SessionProvider
-            appId={appId}
-            portalUrl={portalUrl}
-            basePath={basePath}
-            checkIntervalMs={checkIntervalMs}
-            refreshBufferMs={refreshBufferMs}
-            tokenExpiresOverrideMs={tokenExpiresOverrideMs}
-          >
-            <CustomizationProvider apiEndpoint={`${portalBasePath}/api/portal-customization`}>
-              {children}
-              <VersionBar />
-            </CustomizationProvider>
-          </SessionProvider>
-        </ThemeProvider>
+        <Providers
+          appId={appId}
+          portalUrl={portalUrl}
+          basePath={basePath}
+          portalBasePath={portalBasePath}
+          checkIntervalMs={checkIntervalMs}
+          refreshBufferMs={refreshBufferMs}
+          tokenExpiresOverrideMs={tokenExpiresOverrideMs}
+        >
+          {children}
+        </Providers>
       </body>
     </html>
   );
