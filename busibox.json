@@ -1,0 +1,21 @@
+{
+  "$schema": "https://busibox.io/schemas/app-manifest-v1.json",
+  "name": "Substacker",
+  "id": "substacker",
+  "version": "1.0.0",
+  "description": "Manage and grow subscriber bases for expert-driven Substacks through AI-powered research, strategy, live interviews, and automated publishing.",
+  "icon": "Newspaper",
+  "defaultPath": "/substacker",
+  "defaultPort": 3008,
+  "healthEndpoint": "/api/health",
+  "buildCommand": "npm run build",
+  "startCommand": "npm start",
+  "appMode": "frontend",
+  "requiredEnvVars": [],
+  "optionalEnvVars": [
+    "NEXT_PUBLIC_DEBUG",
+    "SEARCH_API_URL",
+    "SUBSTACK_PUBLICATION_URL"
+  ],
+  "busiboxAppVersion": "^3.0.0"
+}
