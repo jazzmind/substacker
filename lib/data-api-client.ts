@@ -89,7 +89,7 @@ export const expertProfileSchema: AppDataSchema = {
   allowSharing: false,
   graphNode: 'ExpertProfile',
   graphRelationships: [
-    { type: 'PROFILE_FOR', targetNode: 'Stack', direction: 'outgoing' },
+    { source_label: 'ExpertProfile', target_field: 'stackId', target_label: 'Stack', relationship: 'PROFILE_FOR' },
   ],
 };
 
@@ -115,7 +115,7 @@ export const competitorSchema: AppDataSchema = {
   allowSharing: false,
   graphNode: 'Competitor',
   graphRelationships: [
-    { type: 'COMPETES_WITH', targetNode: 'Stack', direction: 'outgoing' },
+    { source_label: 'Competitor', target_field: 'stackId', target_label: 'Stack', relationship: 'COMPETES_WITH' },
   ],
 };
 
@@ -164,7 +164,7 @@ export const interviewSchema: AppDataSchema = {
   allowSharing: false,
   graphNode: 'Interview',
   graphRelationships: [
-    { type: 'INTERVIEW_FOR', targetNode: 'Stack', direction: 'outgoing' },
+    { source_label: 'Interview', target_field: 'stackId', target_label: 'Stack', relationship: 'INTERVIEW_FOR' },
   ],
 };
 
@@ -190,8 +190,8 @@ export const postSchema: AppDataSchema = {
   allowSharing: false,
   graphNode: 'Post',
   graphRelationships: [
-    { type: 'POST_FOR', targetNode: 'Stack', direction: 'outgoing' },
-    { type: 'GENERATED_FROM', targetNode: 'Interview', direction: 'outgoing' },
+    { source_label: 'Post', target_field: 'stackId', target_label: 'Stack', relationship: 'POST_FOR' },
+    { source_label: 'Post', target_field: 'interviewId', target_label: 'Interview', relationship: 'GENERATED_FROM' },
   ],
 };
 

@@ -7,7 +7,8 @@ import { Loader2, MessageSquare } from 'lucide-react';
 export default function ChatPage() {
   const [agentToken, setAgentToken] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
-  const [SimpleChatInterface, setSimpleChatInterface] = useState<React.ComponentType<Record<string, unknown>> | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [ChatComponent, setChatComponent] = useState<React.ComponentType<any> | null>(null);
 
   useEffect(() => {
     async function load() {
@@ -18,10 +19,9 @@ export default function ChatPage() {
           setAgentToken(data.token);
         }
 
-        // Dynamic import to avoid SSR issues
         const mod = await import('@jazzmind/busibox-app');
         if (mod.SimpleChatInterface) {
-          setSimpleChatInterface(() => mod.SimpleChatInterface);
+          setChatComponent(() => mod.SimpleChatInterface);
         }
       } catch (err) {
         console.error('Failed to load chat:', err);
@@ -50,8 +50,8 @@ export default function ChatPage() {
       </div>
 
       <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 h-[600px]">
-        {agentToken && SimpleChatInterface ? (
-          <SimpleChatInterface
+        {agentToken && ChatComponent ? (
+          <ChatComponent
             token={agentToken}
             agentId="strategy-architect"
             placeholder="Ask about your Substacks..."
