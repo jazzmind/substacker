@@ -5,6 +5,7 @@
   "description": "Manage and grow expert-driven Substacks with AI-powered research, interviews, and publishing",
   "scripts": {
     "dev": "next dev -p 3008",
+    "prebuild": "rm -rf .next",
     "build": "next build",
     "start": "next start -p 3008",
     "test": "vitest run",
