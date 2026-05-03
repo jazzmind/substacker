@@ -1,0 +1,129 @@
+{
+  "stack": {
+    "name": "Manage Knowledgement",
+    "substackUrl": "https://manageknowledgement.substack.com",
+    "expertName": "Wes Sonnenreich",
+    "expertBio": "AI strategy lead, builder, and practical modernist exploring how humans should handle abundant knowledge, AI agents, ignorance, wisdom, and shared values.",
+    "topics": [
+      "AI-native life",
+      "knowledge and wisdom",
+      "ignorance",
+      "personal operating systems",
+      "agent-mediated work",
+      "family and collective knowing",
+      "decision-making"
+    ],
+    "status": "onboarding",
+    "postingFrequency": "weekly"
+  },
+  "expertProfile": {
+    "expertise": [
+      "AI strategy",
+      "agentic workflows",
+      "knowledge work",
+      "software systems",
+      "organizational decision-making",
+      "practical philosophy"
+    ],
+    "talkingPoints": [
+      "Access to knowledge is not the same as readiness to carry it.",
+      "Ignorance can be dangerous, useful, chosen, protective, or transitional.",
+      "The right amount of knowing depends on the endeavor and the reversibility of the decision.",
+      "Wisdom is knowledge metabolized through values, consequence, time, humility, and care.",
+      "AI agents should sharpen human judgment rather than replace it.",
+      "Shared values should govern shared knowledge.",
+      "Families, teams, and institutions are knowledge systems."
+    ],
+    "tone": "Practical, modernist, reflective, direct, grounded, not academic, not guru-like.",
+    "targetAudience": "Thoughtful builders, operators, creators, parents, managers, and professionals who use AI tools and want better judgment about how to seek, hold, share, and act on knowledge.",
+    "uniqueAngle": "A reversal of knowledge management: instead of assuming collected knowledge creates shared value, Manage Knowledgement asks how shared values should govern the pursuit and use of knowledge.",
+    "preferredFormats": [
+      "long-form essay",
+      "practical framework",
+      "agent skill companion",
+      "reflective exercise",
+      "season arc"
+    ],
+    "interviewTranscript": "Seeded from the Manage Knowledgement publication profile and season plan."
+  },
+  "strategy": {
+    "postingSchedule": "Weekly foundation essays for Season 1; each post includes one practical artifact when the practice is repeatable.",
+    "topicCalendar": [
+      {
+        "week": 1,
+        "topic": "The Apple Was Not The Problem",
+        "angle": "Knowledge without readiness",
+        "format": "manifesto essay plus Knowledge Readiness Check"
+      },
+      {
+        "week": 2,
+        "topic": "Ignorance Is Not Empty",
+        "angle": "Classifying useful and dangerous ignorance",
+        "format": "essay plus Ignorance Classifier"
+      },
+      {
+        "week": 3,
+        "topic": "The Right Amount Of Knowing",
+        "angle": "Enough knowledge to act without hiding in research",
+        "format": "essay plus Right Amount Of Knowing skill"
+      },
+      {
+        "week": 4,
+        "topic": "The Burden Of Being Able To Ask",
+        "angle": "AI turns curiosity into responsibility",
+        "format": "essay plus Question Triage Map"
+      },
+      {
+        "week": 5,
+        "topic": "Wisdom Is A Rate Limiter",
+        "angle": "Some knowledge should move slower than tools allow",
+        "format": "essay plus Wisdom Delay Protocol"
+      },
+      {
+        "week": 6,
+        "topic": "When Knowledge Becomes Social Debt",
+        "angle": "What we owe others once we know",
+        "format": "essay plus Knowledge Sharing Ledger"
+      },
+      {
+        "week": 7,
+        "topic": "The Family As Knowledge System",
+        "angle": "Households transmit, hide, and metabolize knowledge",
+        "format": "essay plus Household Knowledge Agreement"
+      },
+      {
+        "week": 8,
+        "topic": "Agents As Mirrors",
+        "angle": "Agent instructions become rehearsed values",
+        "format": "essay plus Mirror Agent Prompt Pattern"
+      },
+      {
+        "week": 9,
+        "topic": "Collective Knowing Without Collective Thinking",
+        "angle": "Shared information is not shared judgment",
+        "format": "essay plus Collective Knowing Review"
+      },
+      {
+        "week": 10,
+        "topic": "A Personal Knowledge Constitution",
+        "angle": "Values governing what you seek, keep, share, and refuse",
+        "format": "essay plus constitution template"
+      }
+    ],
+    "contentPillars": [
+      "Ignorance as a Resource",
+      "Knowledge as Force",
+      "Wisdom as Metabolism",
+      "The Right Amount of Knowing",
+      "Shared Values Before Shared Knowledge"
+    ],
+    "growthTactics": [
+      "Publish essays first for clarity, then package short excerpts for social channels.",
+      "Invite reader replies around concrete dilemmas rather than broad agreement.",
+      "Share companion skills as optional practice artifacts, not as prompt-pack giveaways.",
+      "Use reader questions as future post seeds and knowledge-base entries.",
+      "Avoid generic AI productivity positioning."
+    ],
+    "toneGuidelines": "Write with moral seriousness and practical usefulness. Avoid academic abstraction, guru language, hype, and easy certainty. Every essay should eventually answer: what should I do differently because I know this?"
+  }
+}
